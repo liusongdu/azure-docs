@@ -173,7 +173,7 @@ $workspaceId = "/subscriptions/d2e37fee-1234-40b2-5678-0b2199de3b50/resourcegrou
 
 $nsg = Get-AzNetworkSecurityGroup -Name 'ContosoNSG'
 
-Set-AzDiagnosticSetting -ResourceId $nsg.ResourceId  -WorkspaceId $workspaceId -Enabled $true
+Set-AzDiagnosticSetting -ResourceId $nsg.Id  -WorkspaceId $workspaceId -Enabled $true
 ```
 
 ### Use Azure Network Security Group analytics
